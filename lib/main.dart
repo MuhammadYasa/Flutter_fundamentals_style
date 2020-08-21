@@ -27,11 +27,18 @@ class HalamanSatu extends StatelessWidget {
         child: new Center(
           // kenapa tidak tengah kotaknya ?, karena hanya menengahkan textnya saja
           // nah di dalam widget center ini, kita buat widget lagi, widget text, berarti widget text ini adalah anak dari widget center
-          child: new Text(
-            "Muhammad Yasa",
-            style: new TextStyle(
-                color: Colors.white, fontFamily: "Serif", fontSize: 20),
+          
+          child: new Icon(
+            Icons.apps, // memilih icon bisa di lihat di web flutter
+            color: Colors.grey, // memberi warna pada icon
+            size: 100, // memberi size pada icon
           ),
+          
+         // child: new Text(
+         //   "Muhammad Yasa",
+         //   style: new TextStyle(
+         //       color: Colors.white, fontFamily: "Serif", fontSize: 20),
+         // ),
         ),
       ),
     ));
